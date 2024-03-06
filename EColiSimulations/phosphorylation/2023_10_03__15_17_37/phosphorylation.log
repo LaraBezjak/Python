@@ -1,0 +1,47 @@
+BioNetGen version 2.9.0
+Reading from file d:\Data\Dokumenti\Lara_dokumenti\Programiranje\Coursera\Biological Modeling\Module 2 Unpacking E. colis Genius Exploration Algorithm\EColiSimulations\phosphorylation\2023_10_03__15_17_37\phosphorylation.bngl (level 0)
+Read 4 molecule types.
+Read 3 observable(s).
+Read 10 parameters.
+Read 5 reaction rule(s).
+Read 6 species.
+ACTION: generate_network( phosphorylation )
+Iteration   0:     6 species      0 rxns  0.00e+00 CPU s
+Iteration   1:     8 species      5 rxns  0.00e+00 CPU s
+Iteration   2:     8 species      9 rxns  1.60e-02 CPU s
+Cumulative CPU time for each rule
+Rule   1:     4 reactions 1.60e-02 CPU s 4.00e-03 CPU s/rxn
+Rule   2:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   3:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   4:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   5:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Total   :     9 reactions 1.60e-02 CPU s 1.78e-03 CPU s/rxn
+Wrote network in net format to phosphorylation.net.
+CPU TIME: generate_network 0.02 s.
+ACTION: simulate( method=>"ssa" )
+Network simulation using ssa
+WARNING: writeFile(): Overwriting existing file phosphorylation.net.
+Wrote network in net format to phosphorylation.net.
+Running run_network on Fuqoff
+full command: D:\VM\Anaconda\lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o phosphorylation -p ssa -h 516704797 --cdat 1 --fdat 0 -g phosphorylation.net phosphorylation.net 0.03 100
+[simulation PID is: 7296]
+run_network 3.0
+Read 15 parameters from phosphorylation.net
+Read 8 species from phosphorylation.net
+Read 3 group(s) from phosphorylation.net
+Read 0 function(s) from phosphorylation.net
+Read 9 reaction(s) from phosphorylation.net
+9 reaction(s) have nonzero rate
+rxn_rate_update_interval=1
+Average number of update rxns is 4.78
+Initialization took 0.05 CPU seconds
+Stochastic simulation using direct Gillespie algorithm
+TOTAL STEPS: 1190521
+Time course of concentrations written to file phosphorylation.cdat.
+Time course of groups written to file phosphorylation.gdat.
+Propagation took 1.88e-01 CPU seconds
+Program times:  0.23 CPU s 0.00 clock s
+Updating species concentrations from phosphorylation.cdat
+CPU TIME: simulate 0.00 s.
+Finished processing file d:\Data\Dokumenti\Lara_dokumenti\Programiranje\Coursera\Biological Modeling\Module 2 Unpacking E. colis Genius Exploration Algorithm\EColiSimulations\phosphorylation\2023_10_03__15_17_37\phosphorylation.bngl.
+CPU TIME: total 0.05 s.

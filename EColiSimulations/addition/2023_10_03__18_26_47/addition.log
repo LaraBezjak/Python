@@ -1,0 +1,65 @@
+BioNetGen version 2.9.0
+Reading from file d:\Data\Dokumenti\Lara_dokumenti\Programiranje\Coursera\Biological Modeling\Module 2 Unpacking E. colis Genius Exploration Algorithm\EColiSimulations\addition\2023_10_03__18_26_47\addition.bngl (level 0)
+Read 6 molecule types.
+Read 7 observable(s).
+Read 21 parameters.
+Read 1 functions.
+Read 19 reaction rule(s).
+Read 3 compartments.
+Read 13 species.
+ACTION: generate_network( addition )
+Iteration   0:    13 species      0 rxns  0.00e+00 CPU s
+Iteration   1:    25 species     28 rxns  4.70e-02 CPU s
+Iteration   2:    31 species     82 rxns  7.80e-02 CPU s
+Iteration   3:    31 species    111 rxns  6.30e-02 CPU s
+Cumulative CPU time for each rule
+Rule   1:    24 reactions 4.80e-02 CPU s 2.00e-03 CPU s/rxn
+Rule   2:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   3:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   4:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   5:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   6:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   7:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   8:    12 reactions 1.50e-02 CPU s 1.25e-03 CPU s/rxn
+Rule   9:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  10:    24 reactions 4.70e-02 CPU s 1.96e-03 CPU s/rxn
+Rule  11:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  12:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  13:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  14:     2 reactions 1.50e-02 CPU s 7.50e-03 CPU s/rxn
+Rule  15:    12 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  16:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  17:     8 reactions 3.10e-02 CPU s 3.88e-03 CPU s/rxn
+Rule  18:     8 reactions 1.60e-02 CPU s 2.00e-03 CPU s/rxn
+Rule  19:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Total   :   111 reactions 1.72e-01 CPU s 1.55e-03 CPU s/rxn
+Wrote network in net format to addition.net.
+CPU TIME: generate_network 0.20 s.
+ACTION: simulate( method=>"ssa" )
+Network simulation using ssa
+WARNING: writeFile(): Overwriting existing file addition.net.
+Wrote network in net format to addition.net.
+Running run_network on Fuqoff
+full command: D:\VM\Anaconda\lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o addition -p ssa -h 1650157195 --cdat 1 --fdat 0 -g addition.net addition.net 2 500
+[simulation PID is: 16868]
+run_network 3.0
+Read 39 parameters from addition.net
+Read 31 species from addition.net
+Read 7 group(s) from addition.net
+Read 1 function(s) from addition.net
+Read 111 reaction(s) from addition.net
+Removed 2 reactions with zero rate
+109 reaction(s) have nonzero rate
+rxn_rate_update_interval=1
+Average number of update rxns is 21.61
+Initialization took 0.05 CPU seconds
+Stochastic simulation using direct Gillespie algorithm
+TOTAL STEPS: 712505224
+Time course of concentrations written to file addition.cdat.
+Time course of groups written to file addition.gdat.
+Propagation took 3.45e+02 CPU seconds
+Program times:  345.30 CPU s 361.00 clock s
+Updating species concentrations from addition.cdat
+CPU TIME: simulate 0.03 s.
+Finished processing file d:\Data\Dokumenti\Lara_dokumenti\Programiranje\Coursera\Biological Modeling\Module 2 Unpacking E. colis Genius Exploration Algorithm\EColiSimulations\addition\2023_10_03__18_26_47\addition.bngl.
+CPU TIME: total 0.30 s.

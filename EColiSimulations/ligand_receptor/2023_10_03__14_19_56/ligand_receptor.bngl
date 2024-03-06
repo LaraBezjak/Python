@@ -1,0 +1,36 @@
+begin model
+
+begin parameters
+  NaV 6.02e+8
+  L0 10000
+  T0 7000
+  k_lr_bind 8.8e6/NaV
+  k_lr_dis 35
+end parameters
+
+begin molecule types
+  L(t)
+  T(l)
+end molecule types
+
+begin species
+  L(t) L0
+  T(l) T0
+end species
+
+begin observables
+  Molecules free_ligand L(t)
+  Molecules bound_ligand L(t!1).T(l!1)
+  Molecules free_receptor T(l)
+end observables
+
+begin reaction rules
+  LR: L(t) + T(l) <-> L(t!1).T(l!1) k_lr_bind,k_lr_dis 
+end reaction rules
+
+end model
+
+visualize({type=>'contactmap'})
+visualize({type=>'ruleviz_pattern'})
+visualize({type=>'ruleviz_operation'})
+visualize({type=>'regulatory',background=>1,ruleNames=>1})

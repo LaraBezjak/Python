@@ -1,0 +1,78 @@
+BioNetGen version 2.9.0
+Reading from file d:\Data\Dokumenti\Lara_dokumenti\Programiranje\Coursera\Biological Modeling\Module 2 Unpacking E. colis Genius Exploration Algorithm\EColiSimulations\adaptation\2023_10_03__18_20_41\adaptation.bngl (level 0)
+Read 6 molecule types.
+Read 7 observable(s).
+Read 20 parameters.
+Read 20 reaction rule(s).
+Read 3 compartments.
+Read 13 species.
+ACTION: generate_network( adaptation )
+Iteration   0:    13 species      0 rxns  0.00e+00 CPU s
+WARNING: Duplicate of rxn 7 detected. Rules generating this rxn are YPhos, YP.
+WARNING: Duplicate of rxn 8 detected. Rules generating this rxn are YPhos, YP.
+WARNING: Duplicate of rxn 9 detected. Rules generating this rxn are YPhos, YP.
+WARNING: Duplicate of rxn 10 detected. Rules generating this rxn are YDephos, YDep.
+Iteration   1:    25 species     27 rxns  4.60e-02 CPU s
+WARNING: Duplicate of rxn 40 detected. Rules generating this rxn are YPhos, YP.
+WARNING: Duplicate of rxn 41 detected. Rules generating this rxn are YPhos, YP.
+WARNING: Duplicate of rxn 42 detected. Rules generating this rxn are YPhos, YP.
+WARNING: Duplicate of rxn 43 detected. Rules generating this rxn are YPhos, YP.
+WARNING: Duplicate of rxn 44 detected. Rules generating this rxn are YPhos, YP.
+WARNING: Duplicate of rxn 45 detected. Rules generating this rxn are YPhos, YP.
+Iteration   2:    31 species     81 rxns  9.40e-02 CPU s
+WARNING: Duplicate of rxn 88 detected. Rules generating this rxn are YPhos, YP.
+WARNING: Duplicate of rxn 89 detected. Rules generating this rxn are YPhos, YP.
+WARNING: Duplicate of rxn 90 detected. Rules generating this rxn are YPhos, YP.
+Iteration   3:    31 species    110 rxns  4.70e-02 CPU s
+Cumulative CPU time for each rule
+Rule   1:    24 reactions 1.60e-02 CPU s 6.67e-04 CPU s/rxn
+Rule   2:    12 reactions 4.70e-02 CPU s 3.92e-03 CPU s/rxn
+Rule   3:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   4:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   5:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   6:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   7:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule   8:     2 reactions 1.50e-02 CPU s 7.50e-03 CPU s/rxn
+Rule   9:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  10:     0 reactions 1.50e-02 CPU s 0.00e+00 CPU s/rxn
+Rule  11:     0 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  12:    24 reactions 3.20e-02 CPU s 1.33e-03 CPU s/rxn
+Rule  13:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  14:     2 reactions 1.60e-02 CPU s 8.00e-03 CPU s/rxn
+Rule  15:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  16:     2 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  17:    12 reactions 1.50e-02 CPU s 1.25e-03 CPU s/rxn
+Rule  18:     1 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Rule  19:     8 reactions 3.10e-02 CPU s 3.88e-03 CPU s/rxn
+Rule  20:     8 reactions 0.00e+00 CPU s 0.00e+00 CPU s/rxn
+Total   :   110 reactions 1.87e-01 CPU s 1.70e-03 CPU s/rxn
+Wrote network in net format to adaptation.net.
+CPU TIME: generate_network 0.22 s.
+ACTION: simulate( method=>"ssa" )
+Network simulation using ssa
+WARNING: writeFile(): Overwriting existing file adaptation.net.
+Wrote network in net format to adaptation.net.
+Running run_network on Fuqoff
+full command: D:\VM\Anaconda\lib\site-packages\bionetgen\bng-win\bin\run_network.exe -o adaptation -p ssa -h 1318843082 --cdat 1 --fdat 0 -g adaptation.net adaptation.net 1 800
+[simulation PID is: 14664]
+run_network 3.0
+Read 38 parameters from adaptation.net
+Read 31 species from adaptation.net
+Read 7 group(s) from adaptation.net
+Read 0 function(s) from adaptation.net
+Read 110 reaction(s) from adaptation.net
+Removed 2 reactions with zero rate
+108 reaction(s) have nonzero rate
+rxn_rate_update_interval=1
+Average number of update rxns is 21.47
+Initialization took 0.01 CPU seconds
+Stochastic simulation using direct Gillespie algorithm
+TOTAL STEPS: 127331313
+Time course of concentrations written to file adaptation.cdat.
+Time course of groups written to file adaptation.gdat.
+Propagation took 3.96e+01 CPU seconds
+Program times:  39.61 CPU s 42.00 clock s
+Updating species concentrations from adaptation.cdat
+CPU TIME: simulate 0.02 s.
+Finished processing file d:\Data\Dokumenti\Lara_dokumenti\Programiranje\Coursera\Biological Modeling\Module 2 Unpacking E. colis Genius Exploration Algorithm\EColiSimulations\adaptation\2023_10_03__18_20_41\adaptation.bngl.
+CPU TIME: total 0.31 s.
